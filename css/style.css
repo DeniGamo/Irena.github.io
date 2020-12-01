@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body{
+    background-color: #f5f5f5;
+    color:#222;
+    font-size: 15px;
+    font-family:Solway, serif;
+}
+.time{
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: #ddd;
+  color: #22aa22;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #a9a9a9c6 inset,
+              -2px -2px 4px #FFF inset;
+}
+.container{
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #a9a9a9c6,
+                -6px -6px 5px #FFF;
+    padding:20px;
+}
+.login{
+  background-color: #50bbf5;
+  color:white;
+  box-shadow: 6px 6px 10px #191e4b,
+                -10px -10px 10px #FFF;
+}
+.alert{
+  position: fixed;
+  text-align: center;
+  padding-top: 45vh;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.95);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.alert button{
+  width: 130px;
+  height: 45px;
+  background: black;
+  color:white;
+  border:none;
+  transition-duration: 200ms;
+}
+
+.alert button:hover{
+  width: 110px;
+  height: 40px;
+  background-color: #aaa;
+  color:black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/*Main CSS*/
+#start{
+  text-align: center;
+  font-family: Solway, serif;
+  height: 400vh;
+  background-color: #2a327d;
+}
+.head{
+  background-color: burlywood;
+}
+.special{
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.9em;
+  font-weight: bolder;
+}
+.again{
+  height: 50vh;
+  background-color: #fb6158;
+  color: #ddd;
+}
+.again p{
+  padding-top: 30vh;
+  font-weight: bolder;
+}
+#stop{
+  font-size: 1.6em;
+  margin: auto;
+  background-color: coral;
+  padding: 30px;
+}
+.messageContainer{
+  border-radius: 10px;
+  color: #f5f5f5;
+  text-align: left;
+  padding: 30px;
+}
+.message-container{
+  background-color: #00c689;
+}
+.messageContainer p{
+  font-size: 13px;
+}
+
+.wishes-input{
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+}
+.footer{
+  margin-top: 20px;
+}
+.submitBtn{
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+
+}
+.submitBtn:hover{
+  width: 140px;
+  height: 50px;
+}
+.dissappear{
+  opacity: 0;
+  animation-name: dissappear;
+  animation-duration: 30s;
+}
+@keyframes dissappear{
+	0% {opacity: 1}
+	90% {opacity: 1}
+	100% {opacity: 0}
+}
+.appear{
+  animation-name: appear;
+	animation-duration: 30s;
+}
+@keyframes appear{
+	0% {opacity: 0;}
+	90% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+/* ENDING */
+
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.end{
+  background-color: #b10dd1;
+  color: #ffffff;
+  font-family:Solway, serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+.end-footer{
+  position: absolute;
+  text-align: left;
+  width: 100vw;
+  bottom: 40px;
+  background-color: #610274;
+}
+.end-footer p{
+  color: white;
+  margin-left: 30px;
+}
+.makerForm{
+  margin-top: 25px;
+  line-height: 5px;
+}
+.exitBtn{
+  position: absolute;
+  right: 100px;
+  bottom: 150px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+.exitBtn:hover{
+  font-size: 1.2em;
+  box-shadow: 2px 2px 6px black,
+              -3px -3px 5px #FFF;
+}
+.hide{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .messageContainer{
+    display: block;
+    font-size: 0.7em;
+  }
+  #stop{
+    font-size: 1em;
+  }
+  .messageContainer{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .submitBtn{
+    margin-top: 30px;
+  }
+  .end-footer{
+    position: relative;
+    text-align: left;
+    width: 100vw;
+    margin-top: 100px;
+  }
+  .exitBtn{
+    bottom:0;
+    right: 5px;
+  }
+}
